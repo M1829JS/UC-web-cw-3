@@ -3,6 +3,11 @@ h1{
     color: orange;
 }
 
+h2 {
+    font-family: monospace;
+    color: orange;
+}
+
 .container{
     width: 500px;
     display: flex;
@@ -24,6 +29,8 @@ h1{
 
 .box:hover{
     background-color: turquoise;
+    animation-name: example;
+    animation-duration: 0.5s;
 }
 
 body{
@@ -32,4 +39,73 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+@keyframes example {
+    from {background-color: teal;}
+    to {background-color: turquoise;}
+  }
+
+#button{
+    background-color: teal;
+    color: aqua;
+    font-family: monospace;
+    border-color: darkkhaki;
+    box-shadow: 3px 3px black;
+}
+
+a {
+    font-family: monospace;
+    color: orange;
+    font-size: 20px;
+}
+
+a:hover {
+    color: tomato;
+    font-size: 22px;
+    animation-name: bigger;
+    animation-duration: 0.3s;
+    animation-name: dif;
+    animation-duration: 0.3s;
+}
+
+@keyframes bigger {
+    from{color: orange;}
+    to{color: tomato;}
+    from{font-size: 20px;}
+    to{font-size: 22px;}
+}
+
+@keyframes dif {
+    from{color: orange;}
+    to{color: tomato;}
+    from{font-size: 20px;}
+    to{font-size: 22px;}
+}
+
+#colored {
+    background-color: brown;
+    width: 600px;
+    text-align: center;
+}
+
+li {
+    font-family: monospace;
+    counter-increment: li;
+    color: orange;
+    font-size: 20px;
+}
+
+ol {
+    list-style: none; 
+    counter-reset: li;
+}
+
+li::before {
+    content: counter(li); 
+    color: orange;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    font-size: 20px;
 }

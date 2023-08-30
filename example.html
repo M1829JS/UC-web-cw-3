@@ -3,70 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3x3 Responsive Grid</title>
+    <title>Example</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
 </head>
 <body>
-    <h1>Welcome To My 3x3 Grid Website</h1>
-    <div class="container">
-        <div class="box" onclick="changecolor()" id="box"></div>
-        <div class="box" onclick="changecolor1()" id="box1"></div>
-        <div class="box" onclick="changecolor2()" id="box2"></div>
-        <div class="box" onclick="changecolor3()" id="box3"></div>
-        <div class="box" onclick="changecolor4()" id="box4"></div>
-        <div class="box" onclick="changecolor5()" id="box5"></div>
-        <div class="box" onclick="changecolor6()" id="box6"></div>
-        <div class="box" onclick="changecolor7()" id="box7"></div>
-        <div class="box" onclick="changecolor8()" id="box8"></div>
-    </div>
-    <br>
-    <button onClick="window.location.reload();" id="button">Reload Grid</button>
     <br>
     <br>
-    <a href="./videos.html">go to videos</a>
     <br>
-    <a href="./example.html">Example of a game</a>
-    <script>
-        // alert for instructions
-        alert('This is a 3x3 grid that you can play with in a lot of different ways')
-        alert('Visit the link at the bottom of the page to see an example')
-        // change color of the first box
-        function changecolor() {
-            document.getElementById("box").style.backgroundColor = "turquoise";
-        }
-        // change color of the second box
-        function changecolor1() {
-            document.getElementById("box1").style.backgroundColor = "turquoise";
-        }
-        // change color of the third box
-        function changecolor2() {
-            document.getElementById("box2").style.backgroundColor = "turquoise";
-        }
-        // change color of the fourth box
-        function changecolor3() {
-            document.getElementById("box3").style.backgroundColor = "turquoise";
-        }
-        // change color of the fifth box
-        function changecolor4() {
-            document.getElementById("box4").style.backgroundColor = "turquoise";
-        }
-        //change color of the sixth box
-        function changecolor5() {
-            document.getElementById("box5").style.backgroundColor = "turquoise";
-        }
-        //change color of the seventh box
-        function changecolor6() {
-            document.getElementById("box6").style.backgroundColor = "turquoise";
-        }
-        //change color of the eightth box
-        function changecolor7() {
-            document.getElementById("box7").style.backgroundColor = "turquoise";
-        }
-        //change color of the nineth box
-        function changecolor8() {
-            document.getElementById("box8").style.backgroundColor = "turquoise";
-        }
-    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- example -->
+    <ol>
+        <li>Setup a puzzle like the one shown here:</li>
+        <img width="300px" height="300px" src="https://lh3.googleusercontent.com/pw/AIL4fc_J-TnqCCwQvy1oWJBVdLPuKgSjTPD_tZT72JgByhpWlp-FXGHS1ZndrxMWPfOLSS--3GwRrL5PrIFUWoSDIx1IHJyHlrRcqMdFj3mC9xGs3mnkdTWkPmAa5VMBddzfqlbQjAoCspfaP46Bwrf-Tqm8KfzeP4mGwgJqjk08iXXjmQVCXrMeHAaHKvM2iJ39EjKFaL6YznUIrXvx3fXAGULiFtEoyLO2V4yRQVlwuxGIionMCUM_OoGyQzLnjndkU0KoPfPmg9m9imOdO1WVTGihdg15BZgk3jVUiCBhcyWDPI2sXY0g3rfbj0na4xuK_0bChMnfLtK0oiRoHpMjmZz3VgA5q3paCQqBoqNDsmzWFwXk5sqhNA2V3oHTfQ8AYkhoVI1vTbXq9YwotNWISniND93-sjTw0u1g4iaZ1g9wDDt5qHQLPDZw_WRPhgW-roE0OmGI_IzVWJf7ifijDDSyrwXdaWTm8MZlfgnXfLDCL6-TmDDQz447vKj7TVP4U-vEEWTe7epLN3_PXcXHha028aU5dYytcuJgvrC9zRF3F8KmbLuX6KbuK03tZ1uvWxzErSNXCaHCreB-Qzu5QRv3bTSyytjLVNFuqXAQRg_u2e3kCcN1l91obJEb22cAK8_TIFE8c8Ha7E9rQAJ0k_BJgUxk9klVzFhGr2nYeUateWnMhEWtKK-v7_mB668vqKn-7l8hhLvWBEorL_oQzNQcORCyfD5t-yPdFru_WhqWTs19YQUNniPzbVkMG2AfzTRQAxo-F4wLYlLT38U0YBPgYCh_2_oqFmtCkTDIHVHGe9WkWmjvHdqSV1eMIGSt_TEsxDkpEyPTr2Owd6LXiQfItSCgNq1hJTgWfZ8q3431HcJ1ZSChnNGafWu7i6wGmYSRvb8P2TSR_zI5Gi62=w602-h596-s-no?authuser=0" alt="this is here">
+        <li>The dark areas are where you will play</li>
+        <li>Choose a place where you want to start(for example the square on the top-left corner)</li>
+        <li>Try to fill in the whole grid without skipping a square</li>
+    </ol>
+    <br>
+    <h2>BONUS: try completing this impossible level:</h2>
+    <img width="300px" height="300px" src="https://lh3.googleusercontent.com/pw/AIL4fc-Ms8VKFcd8mbxFPdbfRs5oR7HgN8nYl9C9UvnV8EMqkGfY6Szl091aB12K2vgtPqpbSeJGjnPHzk6-5YyFCMBbebKHFgmhWhdUBT1gvjviHc9qrxRkGkD1X11L1Yo_vi3F40s7JV-oS3aJ7YW4hO_H9C8RUFmj1vmOmnH_BSneR5ADNBxLpejynKyKcvIEn6kNRbMLb1QMzjOL7W_oPAcRMc_-y7XTR_5D9Kyj87JVk779Eb9pCBF0YZS2ThEqcALn2lLxdVsYbQ-TGDIs9e0iW1R4VwGE1D05YUbDl3Ei0Ount4fi4yT7lW3Ld3n8UFQJmxSDfvDSQE2IsMzSU_9wp_VpajNT24p99lf7ED8peXktQX851qrp8OS_5fUhvAuIfnuYTpO18hB2ksQ_rexGgzSekkHQwixgsxp-lcyBAweBqImcDb6Mlh4IWFimqEBQQzu88ZqOEf2HAyB2LSuM-fNrYw6MKukobLim9WEEHhUyd0E7RFIRrM-Pk3RCnW-nPljgNo1NjB5ZJNxUvHQDb1Le6F4zhsex5ZNecsyfqLmum2FDmoYcnsELg81ABY04PAdC-t3SYagZdMArOeJhXH-Szc6VgustaQ_UEpY2R6G-DGpsOTFmrZbvPTgXHdO61t9QWHqae-6Yaws6vvJqixMhiiaoS8FwSQQYknGXq0BdXXf95Lf8qzV_26jUN2gXzSIVLZhKcV1E8mn-PVWSJrggW8gOOp7Ay7WTmehVbd4obSIaw8_2EU_Cu2IbampkXN-5vIKL1w5g5YedJi8_fFLLhd7PL0BFb_cmccQiw5uWF8roj7arMkwKfkePlzPCmd7T0tx--EpvycFSCteApWuRJKqFtlDVzUHA78FzklZ7zvgDBroFILv34CNlqlljxn7CvmJdP3-RWi9y=w607-h596-s-no?authuser=0" alt="this is impossible">
+    <br>
+    <br>
+    <a href="./index.html">Back</a>
 </body>
 </html>
